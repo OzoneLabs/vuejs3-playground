@@ -14,7 +14,7 @@ export default {
 
     methods: {
         login() {
-            if (this.username == credentials.username && this.password == credentials.password) {
+            if (this.username === credentials.username && this.password === credentials.password) {
                 alert('Login successful!');
             } else {
                 alert('Login failed!');
@@ -25,25 +25,49 @@ export default {
 </script>
 
 <template>
-    <div>
-        <h1>Login</h1>
-        <form v-on:submit.prevent="login">
-            <div>
-                <input type="text" id="username" v-model="username" placeholder="Username">
+    <el-card class="box">
+        <p>Login</p>
+        <form>
+            <div class="mg-sm">
+                <el-input v-model="username" placeholder="Username" />
             </div>
 
-            <div>
-                <input type="password" id="password" v-model="password" placeholder="Password">
+            <div class="mg-sm">
+                <el-input type="password" v-model="password" placeholder="Password" />
             </div>
 
-            <div>
-                <input type="checkbox" id="remember-password" name="remember-password">
-                <label for="remember-password">Remember the password</label>
-            </div>
+            <el-row justify="space-between">
+                <el-col :span="10">
+                    <el-checkbox label="Remember the password" />
+                </el-col>
+                <el-col :span="6">
+                    <el-link type="primary">Forgot password</el-link>
+                </el-col>
+            </el-row>
 
-            <div>
-                <button type="submit">Login</button>
+            <div class="text-center">
+                <el-button @click="login" type="primary" round class="login-button">Login</el-button>
             </div>
         </form>
-    </div>
+    </el-card>
 </template>
+
+<style scoped>
+.box {
+    width: 560px;
+    /* height: 300px; */
+    /* padding: 20px; */
+}
+
+.mg-sm {
+    margin: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.login-button {
+    width: 480px;
+}
+</style>
