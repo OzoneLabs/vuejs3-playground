@@ -9,6 +9,7 @@ export default {
         return {
             username: '',
             password: '',
+            activeTab: 'login',
         }
     },
 
@@ -26,7 +27,8 @@ export default {
 
 <template>
     <el-card class="box">
-        <p>Login</p>
+        <el-tabs v-model="activeTab">
+            <el-tab-pane label="Login" name="login">
         <form>
             <div class="mg-sm">
                 <el-input v-model="username" placeholder="Username" />
@@ -49,6 +51,14 @@ export default {
                 <el-button @click="login" type="primary" round class="login-button">Login</el-button>
             </div>
         </form>
+            </el-tab-pane>
+
+            <el-tab-pane label="Register" name="register">
+                <h1>TODO</h1>
+            </el-tab-pane>
+        </el-tabs>
+
+
     </el-card>
 </template>
 
