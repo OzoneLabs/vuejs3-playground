@@ -1,9 +1,9 @@
 <script>
-import Login from './components/Login.vue';
+import LoginRegisterCard from './components/LoginRegisterCard.vue';
 
 export default {
     components: {
-        Login,
+        Login: LoginRegisterCard,
     },
 }
 </script>
