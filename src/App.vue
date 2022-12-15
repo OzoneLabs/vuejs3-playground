@@ -3,14 +3,14 @@ import LoginRegisterCard from './components/LoginRegisterCard.vue';
 
 export default {
     components: {
-        Login: LoginRegisterCard,
+        LoginRegisterCard: LoginRegisterCard,
     },
 }
 </script>
 
 <template>
     <div id="background" class="bg-strong-blue full-screen left-top-padding">
-        <Login />
+        <LoginRegisterCard />
     </div>
 </template>
 
