@@ -55,6 +55,13 @@ export default {
         <div>
             <el-button @click="login" type="primary" round class="login-button">Login</el-button>
         </div>
+
+        <el-divider>
+            Third-party login
+        </el-divider>
+
+        <div>
+        </div>
     </form>
 </template>
 
