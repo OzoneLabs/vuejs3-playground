@@ -1,9 +1,11 @@
 <script>
 import Login from './Login.vue';
+import Register from './Register.vue'
 
 export default {
     components: {
         Login,
+        Register,
     },
 
     data() {
@@ -22,7 +24,7 @@ export default {
             </el-tab-pane>
 
             <el-tab-pane label="Register" name="register">
-                <h1>TODO</h1>
+                <Register />
             </el-tab-pane>
         </el-tabs>
     </el-card>
