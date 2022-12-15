@@ -31,11 +31,23 @@ export default {
             <el-tab-pane label="Login" name="login">
                 <form>
                     <div class="mg-sm">
-                        <el-input v-model="username" placeholder="Username" />
+                        <el-input v-model="username" placeholder="Username">
+                            <template #prefix>
+                                <el-icon>
+                                    <User />
+                                </el-icon>
+                            </template>
+                        </el-input>
                     </div>
 
                     <div class="mg-sm">
-                        <el-input type="password" v-model="password" placeholder="Password" />
+                        <el-input type="password" v-model="password" placeholder="Password">
+                            <template #prefix>
+                                <el-icon>
+                                    <Lock />
+                                </el-icon>
+                            </template>
+                        </el-input>
                     </div>
 
                     <el-row justify="space-between">
