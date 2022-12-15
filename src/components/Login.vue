@@ -75,8 +75,7 @@ export default {
 }
 
 .login-button {
-    /* padding: 20em; */
-    width: 25em;
-    margin: 20px 0;
+    width: 100%;
+    margin-top: 20px;
 }
 </style>
