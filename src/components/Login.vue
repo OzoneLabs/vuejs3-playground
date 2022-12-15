@@ -51,12 +51,8 @@ export default {
                     </div>
 
                     <el-row justify="space-between">
-                        <el-col :span="10">
                             <el-checkbox label="Remember the password" />
-                        </el-col>
-                        <el-col :span="6">
                             <el-link type="primary">Forgot password</el-link>
-                        </el-col>
                     </el-row>
 
                     <div class="text-center">
