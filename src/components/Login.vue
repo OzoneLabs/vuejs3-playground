@@ -52,7 +52,7 @@ export default {
             <el-link type="primary">Forgot password</el-link>
         </el-row>
 
-        <div class="text-center">
+        <div>
             <el-button @click="login" type="primary" round class="login-button">Login</el-button>
         </div>
     </form>
@@ -61,10 +61,6 @@ export default {
 <style scoped>
 .mg-sm {
     margin: 10px;
-}
-
-.text-center {
-    text-align: center;
 }
 
 .login-button {
