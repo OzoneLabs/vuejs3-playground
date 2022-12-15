@@ -33,6 +33,6 @@ export default {
 <style scoped>
 .box {
     width: 440px;
-    /* padding: 20px; */
+    padding: 10px;
 }
 </style>
