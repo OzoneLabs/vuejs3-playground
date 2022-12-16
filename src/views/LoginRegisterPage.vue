@@ -25,7 +25,7 @@ export default {
 
         <el-main>
             <el-row class="w-full h-full">
-                <el-col :span="12" class="text-white flex-center flex-col">
+                <el-col :sm="24" :lg="12" class="text-white flex-center flex-col">
                     <div class="max-w-520px">
                         <img src="../assets/loginregister-illustration.svg" width="320" />
                         <div class="font-semibold text-30px">Out of the box in the background management system</div>
@@ -33,7 +33,7 @@ export default {
                     </div>
                 </el-col>
 
-                <el-col :span="12" class="flex-center">
+                <el-col :sm="24" :lg="12" class="flex-center sm:my-6">
                     <LoginRegisterCard />
                 </el-col>
             </el-row>
