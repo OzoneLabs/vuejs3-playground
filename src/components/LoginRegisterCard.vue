@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-    <el-card class="box">
+    <el-card class="w-440px p-10px">
         <el-tabs v-model="activeTab">
             <el-tab-pane label="Login" name="login">
                 <Login />
@@ -29,10 +29,3 @@ export default {
         </el-tabs>
     </el-card>
 </template>
-
-<style scoped>
-.box {
-    width: 440px;
-    padding: 10px;
-}
-</style>

@@ -54,8 +54,8 @@ export default {
             </el-input>
         </div>
 
-        <div>
-            <el-button @click="register" type="primary" round class="register-button">Register</el-button>
+        <div class="mt-10px">
+            <el-button @click="register" type="primary" round class="w-full">Register</el-button>
         </div>
     </form>
 </template>

@@ -27,7 +27,7 @@ export default {
 
 <template>
     <form>
-        <div class="mg-sm">
+        <div>
             <el-input v-model="username" placeholder="Username">
                 <template #prefix>
                     <el-icon>
@@ -37,7 +37,7 @@ export default {
             </el-input>
         </div>
 
-        <div class="mg-sm">
+        <div class="mt-4">
             <el-input type="password" v-model="password" placeholder="Password">
                 <template #prefix>
                     <el-icon>
@@ -47,13 +47,13 @@ export default {
             </el-input>
         </div>
 
-        <el-row justify="space-between">
+        <el-row justify="space-between" class="mt-4">
             <el-checkbox label="Remember the password" />
             <el-link type="primary">Forgot password</el-link>
         </el-row>
 
-        <div>
-            <el-button @click="login" type="primary" round class="login-button">Login</el-button>
+        <div class="mt-20px">
+            <el-button @click="login" type="primary" round class="w-full">Login</el-button>
         </div>
 
         <el-divider>
@@ -64,14 +64,3 @@ export default {
         </div>
     </form>
 </template>
-
-<style scoped>
-.mg-sm {
-    margin: 10px;
-}
-
-.login-button {
-    width: 100%;
-    margin-top: 20px;
-}
-</style>
