@@ -60,7 +60,28 @@ export default {
             Third-party login
         </el-divider>
 
-        <div>
-        </div>
+        <el-row justify="space-around">
+            <el-link :underline="false">
+                <Icon icon="icon-park-outline:wechat" width="25px" />
+            </el-link>
+
+            <el-link :underline="false">
+                <Icon icon="icon-park-outline:github" width="25px" />
+            </el-link>
+
+            <el-link :underline="false">
+                <Icon icon="ph:twitter-logo" width="25px" />
+            </el-link>
+
+            <el-link :underline="false">
+                <Icon icon="eva:google-outline" width="25px" />
+            </el-link>
+        </el-row>
     </form>
 </template>
+
+<style scoped>
+.other-logins {
+    @apply w-60px;
+}
+</style>
