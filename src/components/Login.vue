@@ -79,9 +79,3 @@ export default {
         </el-row>
     </form>
 </template>
-
-<style scoped>
-.other-logins {
-    @apply w-60px;
-}
-</style>
