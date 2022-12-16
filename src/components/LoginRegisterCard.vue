@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-    <el-card class="w-440px p-10px">
+    <el-card class="w-440px p-10px rounded-xl">
         <el-tabs v-model="activeTab">
             <el-tab-pane label="Login" name="login">
                 <Login />
