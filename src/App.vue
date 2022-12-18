@@ -1,13 +1,3 @@
-<script>
-import LoginRegisterPage from './views/LoginRegisterPage.vue';
-
-export default {
-    components: {
-        LoginRegisterPage,
-    },
-}
-</script>
-
 <template>
-    <LoginRegisterPage />
+    <router-view></router-view>
 </template>

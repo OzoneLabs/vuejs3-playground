@@ -6,6 +6,7 @@ import * as ElementPlusIconsVue from '@element-plus/icons-vue';
 import './assets/main.css'
 import 'virtual:windi.css'
 import { Icon } from '@iconify/vue';
+import router from '@/router';
 
 const app = createApp(App);
 
@@ -18,4 +19,5 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 app.component('Icon', Icon);
 
 app.use(ElementPlus);
+app.use(router);
 app.mount('#app');
