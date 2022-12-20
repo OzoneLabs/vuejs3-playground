@@ -1,13 +1,15 @@
 <script>
 import SidebarMenuVue from '../components/SidebarMenu.vue';
+import Greeting from '../components/Greeting.vue';
 
 export default {
     name: 'Home',
-    components: {
-        SidebarMenuVue
-    }
-}
 
+    components: {
+        SidebarMenuVue,
+        Greeting,
+    },
+};
 </script>
 
 <template>
@@ -49,7 +51,7 @@ export default {
             </el-header>
 
             <el-main>
-                Main
+                <Greeting />
             </el-main>
         </el-container>
     </el-container>
