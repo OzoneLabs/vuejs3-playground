@@ -1,5 +1,6 @@
 <script>
 import SidebarMenuVue from '../components/SidebarMenu.vue';
+import ProductionEnvi from '../components/ProductionEnvi.vue';
 import Greeting from '../components/Greeting.vue';
 
 export default {
@@ -7,6 +8,7 @@ export default {
 
     components: {
         SidebarMenuVue,
+        ProductionEnvi,
         Greeting,
     },
 };
@@ -52,6 +54,9 @@ export default {
 
             <el-main>
                 <Greeting />
+
+
+                <ProductionEnvi />
             </el-main>
         </el-container>
     </el-container>
