@@ -3,6 +3,7 @@ import SidebarMenuVue from '../components/SidebarMenu.vue';
 import ProductionEnvi from '../components/ProductionEnvi.vue';
 import Greeting from '../components/Greeting.vue';
 import VueResources from '../components/VueResources.vue';
+import SkillsList from '../components/SkillsList.vue'
 
 export default {
     name: 'Home',
@@ -12,6 +13,7 @@ export default {
         ProductionEnvi,
         Greeting,
         VueResources,
+        SkillsList,
     },
 };
 </script>
@@ -60,6 +62,8 @@ export default {
                 <VueResources />
 
                 <ProductionEnvi />
+
+                <SkillsList />
             </el-main>
         </el-container>
     </el-container>
