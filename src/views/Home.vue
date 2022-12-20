@@ -2,6 +2,7 @@
 import SidebarMenuVue from '../components/SidebarMenu.vue';
 import ProductionEnvi from '../components/ProductionEnvi.vue';
 import Greeting from '../components/Greeting.vue';
+import VueResources from '../components/VueResources.vue';
 
 export default {
     name: 'Home',
@@ -10,6 +11,7 @@ export default {
         SidebarMenuVue,
         ProductionEnvi,
         Greeting,
+        VueResources,
     },
 };
 </script>
@@ -55,6 +57,7 @@ export default {
             <el-main>
                 <Greeting />
 
+                <VueResources />
 
                 <ProductionEnvi />
             </el-main>
